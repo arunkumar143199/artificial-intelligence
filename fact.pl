@@ -1,12 +1,8 @@
+factorial(0,1). 
+factorial(N,F) :-  
+N>0, 
+N1 is N-1, 
+factorial(N1,F1), 
+F is N * F1.
 
-fact(N,Z):-
-
-   N=0 -> write(Z);
-
-
-   N>0 ->
-   Z1 is N*Z,
-   N1 is N-1,
-   fact(N1,Z1)
- .
 
